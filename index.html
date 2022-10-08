@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>symphony demo application</title>
+
+    <link rel="stylesheet" href="https://bootswatch.com/5/flatly/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page">
+        <nav class="bg-primary p-4">
+            <div class="container-fluid">
+                <div class="container d-flex justify-content-between align-item-center">
+                    <span class="text-light">Symphony Demo Application</span>
+                    <span class="text-light"><i class="fa-solid fa-house m-2"></i>Homepage</span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="conteiner-fluid">
+            <div class="container d-flex justify-content-between">
+
+                <div class="d-flex flex-column col-3">
+                    <div class="border p-4 register">
+                        <h4><i class="fa-solid fa-lock p-1"></i>Secure Sign in</h4>
+                        <form class="d-flex flex-column " action="" method="">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" id="username" value="anna_admin">
+
+                            <label for="password">Password :</label>
+                            <input type="password" name="password" id="password" value="testMDP">
+
+                            <a href="index2.html" class="col-5 mt-3 bg-primary text-light btn"><i class="fa-solid fa-arrow-right-to-bracket m-2"></i>Sign in</a>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class=" container-fluid d-flex flex-column col-6">
+                    <div class="container">
+                        <h4><i class="fa-solid fa-arrow-left-long"></i> Try either of the following users</h4>
+                        <table class="mb-3 col-12">
+                            <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Password</th>
+                                <th>Role</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="role">
+                                <td>John_user</td>
+                                <td>kitten</td>
+                                <td><span class="role">ROLE_USER </span>(regular user)</td>
+                            </tr>
+                            <tr>
+                                <td>anna_admin</td>
+                                <td>kitten</td>
+                                <td><span class="role">ROLE_ADMIN </span>(administrator)</td>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="container mb-3">
+                        <div class="d-flex flex-column border p-3">
+                            <div class="d-flex">
+                                <p class="mb-0"><span class="text-uppercase pill">note</span>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, dignissimos. ipsum dolor sit amet, consectetur adipisicing elit. Amet, eaque.</p>
+                            </div>
+                            <h6 class="col-12 commandeSQL">$ php app/console doctrine:fixture:load</h6>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="d-flex flex-column border p-3">
+                            <div class="d-flex">
+                                <p class="mb-0"><span class="text-uppercase pill">tip</span>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, dignissimos. ipsum dolor sit amet, consectetur adipisicing elit. Amet, eaque.</p>
+                            </div>
+                            <h6 class="col-12 commandeSQL">$ php app/console app:add-user</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column col-3 contenueExplication">
+                    <div class="contenueInfo">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus earum facilis, inventore nostrum officia repellendus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur. <a class="text-succes" href="youtube.com">Symphony Documentation</a></p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor, consectetur adipisicing elit. Aliquid illo iusto nihil nisi quidem voluptate.</p>
+                    </div>
+                    <div>
+                        <button class="btn col-12 p-3 sourceCodeBtn"><i class="fa-solid fa-gears"></i>Show source code</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid footer">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="d-flex flex-column p-4">
+                    <p class="text">© 2015 - The Symfony Project</p>
+                    <p class="text">MIT License</p>
+                </div>
+                <div class="containerIcon">
+                    <a href="#"><i class="fa-brands fa-twitter icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f icon"></i></a>
+                    <a href="#"><i class="fa-solid fa-wifi icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="https://kit.fontawesome.com/341c685829.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
